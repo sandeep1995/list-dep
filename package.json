@@ -1,5 +1,5 @@
 {
-  "name": "list",
+  "name": "list-dep",
   "version": "1.0.1",
   "description": "This package helps you to list all the production dependencies you have in your NPM project.",
   "main": "index.js",
