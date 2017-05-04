@@ -93,14 +93,17 @@ const addToCache = (dependencies) => {
 }
 
 const startProcess = () => {
-	console.log(magenta("Starting\n"))
+	console.log(magenta("Listing all dependencies of your project"));
 	readPackage('package.json')
 		.then(data => {
 			let dependencies = getLocalDependencies(data);
+			if (!dependencies) throw Error("Unable to find any packages")
 			addToCache(dependencies);
 			startQueueing();
 		})
-		.catch(err => console.log(red("Oops! Could not find package.json")));
+		.catch(err => {
+			console.log(red("Oops! Either no production dependencies or not a NPM project."))
+		});
 };
 
 startProcess();
