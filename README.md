@@ -6,10 +6,10 @@ This package helps you to list all the production dependencies you have in your 
 You need to install `list` globally.
 
 ```
-npm install list -g
+npm install -g list-dep
 ```
 
 ## Usage
 
 First change directory to your project. Then type `list` and hit enter.
-It will list all the packages you are depending. 
+It will list all the packages you are depending.

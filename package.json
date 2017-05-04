@@ -1,12 +1,12 @@
 {
   "name": "list",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "This package helps you to list all the production dependencies you have in your NPM project.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Sandeep Acharya <i.am.sandeep.acharya@gmail.com> (https://applyhead.com)",
   "license": "ISC",
   "bin": {
     "list": "index.js"
@@ -15,5 +15,19 @@
     "chalk": "^1.1.3",
     "find-versions": "^2.0.0",
     "isomorphic-fetch": "^2.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeep1995/list-dep.git"
+  },
+  "keywords": [
+    "get",
+    "production",
+    "dependecies",
+    "list"
+  ],
+  "bugs": {
+    "url": "https://github.com/sandeep1995/list-dep/issues"
+  },
+  "homepage": "https://github.com/sandeep1995/list-dep#readme"
 }
