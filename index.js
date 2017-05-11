@@ -62,9 +62,9 @@ const download = (package) => {
 					if (!version) {
 						version = dependencies[val];
 					}
-					let package = `${val}&&${version}`;
-					if (cache.add(package) && !visitedCache.get(package)) {
-						download(package);
+					let packageName = `${val}&&${version}`;
+					if (cache.add(packageName) && !visitedCache.get(packageName)) {
+						download(packageName);
 					}
 				});
 			}
@@ -87,8 +87,8 @@ const addToCache = (dependencies) => {
 		if (!version) {
 			version = dependencies[val];
 		}
-		let package = `${val}&&${version}`;
-		cache.add(package);
+		let packageName = `${val}&&${version}`;
+		cache.add(packageName);
 	});
 }
 
