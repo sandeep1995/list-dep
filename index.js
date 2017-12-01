@@ -93,7 +93,7 @@ const addToCache = (dependencies) => {
 }
 
 const startProcess = () => {
-	console.log(magenta("Listing all dependencies of your project"));
+	console.log(magenta("Listing all production dependencies of your project"));
 	readPackage('package.json')
 		.then(data => {
 			let dependencies = getLocalDependencies(data);
